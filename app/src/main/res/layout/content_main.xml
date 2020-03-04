@@ -65,10 +65,25 @@
         android:onClick="IMC"
         android:text="Calcula IMC" />
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:min="10"
+        android:progress="10" />
+
     <TextView
         android:id="@+id/txtIMC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:numeric="integer|decimal"
         android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mtabaixopeso" />
 
 </LinearLayout>
